@@ -1,0 +1,16 @@
+crain_session.get_db_connection:
+  path: '/get-connection'
+  defaults:
+    _title: 'Get Db Connection'
+    _controller: '\Drupal\crain_session\Controller\MakeConnection::makeConnection'
+  requirements:
+    _access: 'TRUE'
+
+crain_session.get_user_content:
+  path: '/get-content/{role}'
+  defaults:
+    _title: 'Get Content'
+    _controller: '\Drupal\crain_session\Controller\GetContent::getContent'
+  requirements:
+    _access: 'TRUE'
+    role: '[a-zA-Z]+'

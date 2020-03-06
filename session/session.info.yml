@@ -1,0 +1,5 @@
+type: module
+name: Crain Session
+description: 'Module For Crain Session'
+package: Crain
+core: '8.x'
